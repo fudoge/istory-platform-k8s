@@ -4,5 +4,6 @@ metadata:
   name: mysql-initdb-config
 data:
   init-user.sql: |
+    CREATE DATABASE IF NOT EXISTS istory;
     GRANT ALL PRIVILEGES ON istory.* TO 'user'@'%';
     FLUSH PRIVILEGES;
