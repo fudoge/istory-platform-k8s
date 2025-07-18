@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: istory-app-config
 data:
-  spring.datasource.url: 'jdbc:mysql://:3306/istory'
+  spring.datasource.url: 'jdbc:mysql://cwave-rds.c3wesmmcgdy1.ap-northeast-2.rds.amazonaws.com:3306/istory'

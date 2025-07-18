@@ -14,4 +14,4 @@ spec:
         - name: check-mysql-ready
           command: ['sh',
                     '-c',
-                    'until mysqladmin ping -u ${MYSQL_USER} -p${MYSQL_PASSWORD} -h 적기 -P 3306; do echo waiting for database; sleep 2; done;']
+                    'until mysqladmin ping -u ${MYSQL_USER} -p${MYSQL_PASSWORD} -h cwave-rds.c3wesmmcgdy1.ap-northeast-2.rds.amazonaws.com -P 3306; do echo waiting for database; sleep 2; done;']
